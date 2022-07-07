@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="logotipo"> <!-- En caso de que no cargue la imagen logo.png se va a cargar el text alternativo -->
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__a" href="index.html">Tienda</a>
+        <a class="navegacion__a navegacion__a--activo" href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>React JS</h1>
+        <div class="producto__contenido">
+            <img class="producto__contenido--imagen" src="img/3.jpg" alt="">
+            <div class="contenido__camisa">
+                <p class="producto__contenido--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <form class="formulario">
+                    <select class="form__campo">
+                        <option disabled selected>--Talla</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                    </select>
+                    <input type="number" class="formulario__cantidad form__campo" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos Los Derechos Reservados</p>
+    </footer>
+</body>
+</html>
